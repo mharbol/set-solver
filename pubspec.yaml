@@ -1,7 +1,7 @@
 name: set_solver
 description: A library to find sets in the Set card/board game
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/mharbol/set-solver/
 
 environment:
   sdk: ^3.1.0

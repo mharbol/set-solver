@@ -1,15 +1,24 @@
 import 'package:set_solver/src/set_card_types.dart';
 
-class SetCard {
+class SetCard implements Comparable<SetCard> {
   final int count;
 
   final Shape shape;
 
   final Color color;
 
-  final Shading shade;
+  final Shade shade;
 
   SetCard(this.count, this.shape, this.color, this.shade);
+
+  @override
+  int compareTo(SetCard other) => (count != other.count
+      ? count - other.count
+      : (shape != other.shape
+          ? shape.compareTo(other.shape)
+          : (color != other.color
+              ? color.compareTo(other.color)
+              : (shade != other.shade ? shade.compareTo(other.shade) : 0))));
 
   @override
   bool operator ==(Object other) =>
@@ -19,7 +28,9 @@ class SetCard {
       other.color == color &&
       other.shade == shade;
 
-  // TODO fix please
   @override
-  int get hashCode => 3;
+  int get hashCode => count * shape.hashCode * color.hashCode * shade.hashCode;
+
+  @override
+  String toString() => "$count $shade $color $shape";
 }
