@@ -1,6 +1,4 @@
-import 'package:set_solver/src/set_card.dart';
-import 'package:set_solver/src/set_card_types.dart';
-import 'package:set_solver/src/set_solver_base.dart';
+import 'package:set_solver/set_solver.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,5 +1,6 @@
-import 'package:set_solver/src/set_card.dart';
-import 'package:set_solver/src/set_card_types.dart';
+
+import 'package:set_solver/src/solver/set_card.dart';
+import 'package:set_solver/src/solver/set_card_types.dart';
 
 SetCard getSetMakingCard(SetCard card1, SetCard card2) {
   final Shape shape = card1.shape.getSetMakingShape(card2.shape);
