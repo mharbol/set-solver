@@ -15,7 +15,7 @@ void main() {
   final card11 = SetCard(1, Shape.squiggle, Color.red, Shade.open);
   final card12 = SetCard(1, Shape.diamond, Color.green, Shade.striped);
 
-  group('Finds the correct Set based on count', () {
+  group('getSetMakingCard() based on count', () {
     test('Test count same', () {
       expect(getSetMakingCard(card1, card2) == card5, isTrue);
     });
@@ -25,7 +25,7 @@ void main() {
     });
   });
 
-  group('Finds the correct Set based on shape', () {
+  group('getSetMakingCard() based on shape', () {
     test('Test shape same', () {
       expect(getSetMakingCard(card1, card4) == card6, isTrue);
     });
@@ -35,7 +35,7 @@ void main() {
     });
   });
 
-  group('Finds correct Set based on color', () {
+  group('getSetMakingCard() based on color', () {
     test('Test color same', () {
       expect(getSetMakingCard(card6, card7) == card8, isTrue);
     });
@@ -45,7 +45,7 @@ void main() {
     });
   });
 
-  group('Finds correct Set based on shade', () {
+  group('getSetMakingCard() based on shade', () {
     test('Test shade same', () {
       expect(getSetMakingCard(card9, card10) == card11, isTrue);
     });

@@ -2,7 +2,7 @@ import 'package:set_solver/set_solver.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('Tests for basic card functionality', () {
+  group('SetCard basic functionality', () {
     final card1 = SetCard(1, Shape.squiggle, Color.red, Shade.solid);
     final card2 = SetCard(1, Shape.squiggle, Color.red, Shade.solid);
     final card3 = SetCard(2, Shape.squiggle, Color.red, Shade.solid);
@@ -21,7 +21,7 @@ void main() {
     });
   });
 
-  group('Test card comparisons', () {
+  group('SetCard comparisons', () {
     final card1 = SetCard(1, Shape.oval, Color.green, Shade.solid);
     final card2 = SetCard(2, Shape.squiggle, Color.red, Shade.open);
     final card3 = SetCard(3, Shape.diamond, Color.purple, Shade.striped);

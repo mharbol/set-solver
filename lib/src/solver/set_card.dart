@@ -1,4 +1,3 @@
-
 import 'package:set_solver/src/solver/set_card_types.dart';
 
 class SetCard implements Comparable<SetCard> {
