@@ -1,5 +1,6 @@
 import 'package:set_solver/src/solver/set_card_types.dart';
 
+/// Lowest level of Set game representation. Represents all properties of a Set Card and how they relate to each other.
 class SetCard implements Comparable<SetCard> {
   final int count;
 
